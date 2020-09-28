@@ -2,48 +2,53 @@
   <nav>
     <div class="logo">
       <img alt="Vue logo" src="../../assets/logo.png" />
-      <h2>Covid19</h2>
+      <a href="#">Covid19</a>
     </div>
     <ul class="nav">
       <li class="nav-item">
         <a href="#" class="nav-link active">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">News</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">About</a>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+};
 </script>
 
 <style scoped>
 nav {
-  background-color: #323736;
+  background-color: #2f3034;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   height: 60px;
+  box-shadow: 0px 2px 9px -3px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
   padding: 10px;
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
 
 .logo img {
   height: 30px;
 }
 
-.logo h2 {
+.logo a {
+  text-decoration: none;
   color: white;
   margin-left: 5px;
   font-size: 20px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
