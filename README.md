@@ -24,4 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Live Demo
-(https://vcovid-stats.herokuapp.com/)
+https://vcovid-stats.herokuapp.com/
