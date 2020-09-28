@@ -239,6 +239,10 @@ export default {
     cursor: unset;
   }
 
+  .card {
+    width: 100vw;
+  }
+
   .card-body {
     flex-direction: column;
     padding: 20px;
