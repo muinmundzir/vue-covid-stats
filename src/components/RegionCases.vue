@@ -54,8 +54,8 @@ export default {
   },
   data() {
     return {
-      search: "",
-      regionCase: "",
+      search: null,
+      regionCase: null,
       isLoading: false,
       isEmpty: true,
     };
@@ -82,8 +82,10 @@ export default {
         .catch((err) => console.log(err));
     },
     clearRegion() {
-      this.search = "";
-      this.regionCase = "";
+      // alert(`This Works!`);
+      this.search = null;
+      this.regionCase = null;
+      this.isEmpty = true;
     },
   },
 };
