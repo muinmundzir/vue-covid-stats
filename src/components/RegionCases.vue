@@ -82,7 +82,6 @@ export default {
         .catch((err) => console.log(err));
     },
     clearRegion() {
-      // alert(`This Works!`);
       this.search = null;
       this.regionCase = null;
       this.isEmpty = true;
